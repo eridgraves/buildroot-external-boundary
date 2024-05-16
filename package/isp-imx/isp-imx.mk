@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-ISP_IMX_VERSION = 4.2.2.22.0
+ISP_IMX_VERSION = 4.2.2.24.0
 ISP_IMX_SITE = $(FREESCALE_IMX_SITE)
 ISP_IMX_SOURCE = isp-imx-$(ISP_IMX_VERSION).bin
 ISP_IMX_DEPENDENCIES = linux linux-imx-headers python3 libdrm tinyxml2 boost
@@ -58,6 +58,10 @@ define ISP_IMX_INSTALL_TARGET_CMDS
 
 	chmod +x $(TARGET_DIR)/usr/share/imx8-isp/bin/run.sh
 	chmod +x $(TARGET_DIR)/usr/share/imx8-isp/bin/start_isp.sh
+
+	# Need to create symlink for missing library -> "isp_media_server: error while loading shared libraries:
+	# libtinyxml2.so.9: cannot open shared object file: No such file or directory"
+	ln -sf /usr/lib/libtinyxml2.so $(TARGET_DIR)/usr/lib/libtinyxml2.so.9
 endef
 
 define ISP_IMX_INSTALL_INIT_SYSTEMD
