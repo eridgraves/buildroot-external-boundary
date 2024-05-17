@@ -1,0 +1,4 @@
+menuconfig BR2_PACKAGE_LWB5PLUS_SDIO_SA_FIRMWARE
+	bool "lwb5plus-sdio-sa-firmware"
+	help
+	  This module adds firmware files for the LWB5+ Wi-Fi/BT module.
