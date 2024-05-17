@@ -1,0 +1,4 @@
+menuconfig BR2_PACKAGE_BDSDMAC_FIRMWARE
+	bool "bdsdmac-firmware"
+	help
+	  This module adds firmware files for the BDSDMAC Wi-Fi/BT module.
