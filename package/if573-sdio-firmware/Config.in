@@ -1,0 +1,4 @@
+menuconfig BR2_PACKAGE_IF573_SDIO_FIRMWARE
+	bool "if573-sdio-firmware"
+	help
+	  This module adds firmware files for the IF573 Wi-Fi/BT module.
