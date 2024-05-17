@@ -1,0 +1,9 @@
+comment "kernel-module-bdsdmac-backports needs a Linux kernel to be built"
+	depends on !BR2_LINUX_KERNEL
+
+menuconfig BR2_PACKAGE_KERNEL_MODULE_BDSDMAC_BACKPORTS
+	bool "kernel module bdsdmac backports"
+	depends on BR2_LINUX_KERNEL
+	help
+	  This kernel module adds support for Laird Backports for
+	  the following Wifi/BT Modules: BD-SDMAC, IFxxx, and LWBxx.
