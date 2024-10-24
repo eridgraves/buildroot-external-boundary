@@ -22,6 +22,12 @@ Here are some details about the configurations available:
 * `nitrogen8mn_qt5_gst1_defconfig`:
   * For i.MX 8M Nano based [Nitrogen8M Nano][nitrogen8mn], [Nitrogen8M Nano SOM][nitrogen8mn-som]
   * Same set of packages as `nitrogen8m_qt5_gst1_defconfig`
+* `nitrogen8ulp_qt5_gst1_defconfig`:
+  * For i.MX 8ULP based [Nitrogen8ULP SOM][nitrogen8ulp]
+  * Same set of packages as `nitrogen8m_qt5_gst1_defconfig`
+* `nitrogen93_gst1_defconfig`:
+  * For i.MX 93 based [Nitrogen93 SMARC][nitrogen93smarc]
+  * Same set of packages as `nitrogen8m_qt5_gst1_defconfig`, except without Qt5 modules
 * `nitrogen8mp_qt5_gst1_defconfig`:
   * For i.MX 8M Plus based [Nitrogen8M Plus SOM][nitrogen8mp-som]
   * Same set of packages as `nitrogen8m_qt5_gst1_defconfig`
@@ -198,6 +204,8 @@ If the configuration includes GStreamer support, the following pipelines can be 
 [nitrogen8mn]:https://boundarydevices.com/wiki/nitrogen8m-nano-sbc "Nitrogen8M Nano product page"
 [nitrogen8mn-som]:https://boundarydevices.com/wiki/nitrogen8m-nano-som "Nitrogen8M Nano SOM product page"
 [nitrogen8mp-som]:https://boundarydevices.com/wiki/nitrogen8m-plus-som "Nitrogen8M Plus SOM product page"
+[nitrogen8ulp]:https://www.ezurio.com/system-on-module/nxp-imx8/nitrogen8ulp-som "Nitrogen8ULP SOM product page"
+[nitrogen93smarc]:https://www.ezurio.com/system-on-module/nxp-imx9/nitrogen93-smarc "Nitrogen93 SMARC product page"
 [private-git]:https://boundarydevices.com/private-git-access/ "Private Git server access"
 [sabrelite]:http://boundarydevices.com/sabre-lite-imx6-sbc "SABRE Lite product page"
 [repo]:https://source.android.com/setup/develop#installing-repo "Installing repo"
